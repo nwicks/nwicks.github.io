@@ -20,6 +20,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script> dataLayer = []; </script>
 	</head>
 	<body class="is-preload">
 
@@ -33,10 +34,10 @@
 
 				<!-- Nav -->
 					<nav id="nav">
-						<a href="#" class="icon fa-home"><span>Home</span></a>
-						<a href="#work" class="icon fa-folder"><span>Work</span></a>
-						<a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
-						<a href="https://www.linkedin.com/in/nicholaswicks" class="icon fa-linkedin"><span>LinkedIn</span></a>
+						<a href="#" class="icon fa-home" onclick="dataLayer.push({'menuSelection': 'HomeNavButton'});"><span>Home</span></a>
+						<a href="#work" class="icon fa-folder" onclick="dataLayer.push({'menuSelection': 'WorkNavButton'});"><span>Work</span></a>
+						<a href="#contact" class="icon fa-envelope" onclick="dataLayer.push({'menuSelection': 'ContactNavButton'});"><span>Contact</span></a>
+						<a href="https://www.linkedin.com/in/nicholaswicks" class="icon fa-linkedin" onclick="dataLayer.push({'menuSelection': 'LinkedInNavButton'});"><span>LinkedIn</span></a>
 					</nav>
 
 				<!-- Main -->
